@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {App} from "./App"
+import { App } from './App';
 
 export const Section = styled.section`
 	padding: 5rem 0;
@@ -8,9 +8,9 @@ export const Section = styled.section`
 	max-width: var(--max-width);
 `;
 export const Title = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: grid;
+	place-items: center;
+	text-align: center;
 `;
 export const Underline = styled.div`
 	width: 5rem;
@@ -20,28 +20,24 @@ export const Underline = styled.div`
 `;
 
 export const Application = styled.main`
-
-  --clr-gold: #c59d5f;
-/* background-color: black;
+	--clr-gold:  ${(props) => props.theme.highlights};
+	/* background-color: black;
  */
-background-color: ${ (props) => props.theme.background  };
-transition: all .25s linear;
-color: ${ (props) => props.theme.text  };
-width: 100vw;
-position: absolute;
-top:0;
-left:0;
-overflow-x: hidden;
-
-
-
+	background-color: ${(props) => props.theme.background};
+	transition: all 0.25s linear;
+	color: ${(props) => props.theme.text};
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
 
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
 	word-wrap: break-word;
 
 	h1 {
@@ -82,7 +78,6 @@ overflow-x: hidden;
 		@media (min-width: 1280px) {
 			font-size: 1.5rem;
 		}
-        
 	}
 
 	p {

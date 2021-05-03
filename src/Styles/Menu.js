@@ -30,7 +30,7 @@ export const MenuItem = styled.article`
 	p::first-letter {
 			text-transform: capitalize;
 			font-weight: 600;
-			font-size: 1.5rem;
+			font-size: 2rem;
 		
 	}
 `;

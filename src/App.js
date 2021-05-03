@@ -13,11 +13,13 @@ function App() {
 
   const LightTheme = {
     background: "white",
-    text: "black"
+    text: "black",
+    highlights: "#DF320B",
   }
   const DarkTheme = {
     background: "black",
-    text: "white"
+    text: "white",
+    highlights: "#c59d5f",
   }
 
   const themes = {
