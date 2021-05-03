@@ -25,6 +25,7 @@ export const MenuItem = styled.article`
 		display: flex;
 		flex-direction: column;
 		padding:0 .75rem;
+		letter-spacing: 1px;
 	}
 
 	p::first-letter {

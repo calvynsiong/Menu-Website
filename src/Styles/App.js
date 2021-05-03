@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { App } from './App';
 
 export const Section = styled.section`
 	padding: 5rem 0;
@@ -31,6 +30,7 @@ export const Application = styled.main`
 	top: 0;
 	left: 0;
 	overflow-x: hidden;
+	overflow: hidden;
 
 	margin: 0;
 	padding: 0;
@@ -80,7 +80,7 @@ export const Application = styled.main`
 		}
 	}
 
-	p {
+	p,a {
 		font-size: 1.125rem;
 		@media (min-width: 768px) {
 			font-size: 1.5rem;

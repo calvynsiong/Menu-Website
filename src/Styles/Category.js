@@ -9,7 +9,7 @@ export const Buttondiv = styled.div`
 	button {
 		background: transparent;
 		border: transparent;
-		font-size: 1.5rem;
+		font-size: 1.75rem;
         font-weight: 500;
 		margin: 1rem;
 		padding: 0.5rem 0.75rem;

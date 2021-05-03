@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Menu from './Menu';
 import Category from './Category';
+import NavBar from './NavBar';
+import FrontPage from './FrontPage';
 import Footer from './Footer';
 import items from './data';
 import { ThemeProvider } from "styled-components";
@@ -14,7 +16,7 @@ function App() {
   const LightTheme = {
     background: "white",
     text: "black",
-    highlights: "#DF320B",
+    highlights: "#FFA500",
   }
   const DarkTheme = {
     background: "black",
@@ -45,15 +47,17 @@ function App() {
   return (
     // Theme Provider passes in props that can be used anywhere in the styled components that it wraps
 		<ThemeProvider theme={themes[theme]}>
-        <Application theme={themes[theme]}>
-          <Section>
-            <Title>
+      <Application theme={themes[theme]}>
+        <NavBar></NavBar>
+        <FrontPage id="FrontPage"> </FrontPage>
+          <Section id="Menu">
+            <Title >
               <h2>Calvyn's Malaysian Menu</h2>
               <Underline></Underline>
             </Title>
             <Category filterItems={filterItems} category={category} theme={theme} setTheme={setTheme} ></Category>
                 <Menu items={menuItems}></Menu>
-                <Footer></Footer>
+                <Footer id="Footer"></Footer>
           </Section>
         </Application>
     </ThemeProvider>
