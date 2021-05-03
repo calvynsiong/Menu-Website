@@ -55,7 +55,7 @@ export const ItemHeader = styled.header`
 	justify-content: space-between;
 	h4 {
 		margin-bottom: 0.5rem;
-		max-width: 20ch;
+		max-width: 15ch;
 		text-transform: capitalize;
 	}
 `;

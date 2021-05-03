@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {App} from "./App"
 
 export const Section = styled.section`
 	padding: 5rem 0;
@@ -21,8 +22,11 @@ export const Underline = styled.div`
 export const Application = styled.main`
 
   --clr-gold: #c59d5f;
-background-color: black;
-color: white;
+/* background-color: black;
+ */
+background-color: ${ (props) => props.theme.background  };
+transition: all .25s linear;
+color: ${ (props) => props.theme.text  };
 width: 100vw;
 position: absolute;
 top:0;
