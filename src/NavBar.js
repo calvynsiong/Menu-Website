@@ -1,14 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Nav, LinkContainer } from './Styles/NavBar';
 import { FaBars } from 'react-icons/fa';
-import logo from './Styles/personalbrand.png';
 
 const NavBar = () => {
-	const [showlinks, setShowLinks] = useState(false);
+	const [showlinks, setShowLinks] = useState(true);
 
 	const showUp = () => {
 		if (window.innerWidth > 800) {
 			setShowLinks(true);
+		} else {
+			setShowLinks(false)
+		}
+	};
+	const respShowUp = () => {
+		if (window.innerWidth < 800) {
+			setShowLinks(!showlinks);
         }
 	};
 	useEffect(() => {
@@ -31,13 +37,19 @@ const NavBar = () => {
 				<LinkContainer>
 					<ul>
 						<li>
-							<a href='#FrontPage'>Home</a>
+							<a href='#FrontPage' onClick={() => {
+							  respShowUp()
+							}}>Home</a>
 						</li>
 						<li>
-							<a href='#Menu'>Menu</a>
+							<a href='#Menu' onClick={() => {
+							  respShowUp()
+							}}>Menu</a>
 						</li>
 						<li>
-							<a href='#Footer'>Contacts</a>
+							<a href='#Footer' onClick={() => {
+							  respShowUp()
+							}}>Contacts</a>
 						</li>
 					</ul>
 				</LinkContainer>

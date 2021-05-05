@@ -8,18 +8,19 @@ export const MenuSection = styled.div`
 	gap: 3rem 2rem;
 	justify-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	/* grid-template-rows: repeat(auto-fit, minmax(300px, 1fr)); */
 `;
 
 export const MenuItem = styled.article`
 	display: flex;
 	flex-direction: column;
+	overflow:hidden;
+	overflow-y: hidden;
+	object-fit: cover;
 	border-radius: 1em;
 	justify-content: space-space-evenly;
 	max-width: 25rem;
 	position: relative;
-	overflow:hidden;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	box-shadow: rgba(0, 0, 0, 0.16) 10px 14px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 	div{
 		display: flex;
@@ -47,7 +48,7 @@ export const Photo = styled.img`
 	overflow-y: hidden;
 
 	:hover {
-		transform: scale(1.2);
+		transform: scale(1.15);
 	}
 `;
 
@@ -56,7 +57,7 @@ export const ItemHeader = styled.header`
 	justify-content: space-between;
 	h4 {
 		margin-bottom: 0.5rem;
-		max-width: 15ch;
+		max-width: 20ch;
 		text-transform: capitalize;
 	}
 `;

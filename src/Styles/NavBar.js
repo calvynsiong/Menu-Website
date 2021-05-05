@@ -31,13 +31,13 @@ export const Nav = styled.div`
 		background: transparent;
 		border: transparent;
 		margin: 1rem;
-        
+        color: ${(props) => props.theme.text};
 		width: 4rem;
 		height: 4rem;
 		object-fit: cover;
 		:hover {
 			transform: rotate(-90deg);
-            border:5px solid ${(props) => props.theme.text};
+            border:3px solid ${(props) => props.theme.text};
             border-radius:50%;
 		}
 		@media (min-width: 800px) {

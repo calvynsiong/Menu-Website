@@ -31,7 +31,7 @@ export const Application = styled.main`
 	left: 0;
 	overflow-x: hidden;
 	overflow: hidden;
-
+	scroll-behavior: smooth;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;

@@ -9,7 +9,7 @@ import { ThemeProvider } from "styled-components";
 import { Application, Section, Title, Underline } from './Styles/App';
 
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
-console.log(allCategories);
+// console.log(allCategories);
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
     text: "white",
     highlights: "#c59d5f",
   }
-
+  
   const themes = {
     light: LightTheme,
     dark: DarkTheme,
@@ -49,7 +49,7 @@ function App() {
 		<ThemeProvider theme={themes[theme]}>
       <Application theme={themes[theme]}>
         <NavBar></NavBar>
-        <FrontPage id="FrontPage"> </FrontPage>
+        <FrontPage > </FrontPage>
           <Section id="Menu">
             <Title >
               <h2>Calvyn's Malaysian Menu</h2>
@@ -57,7 +57,7 @@ function App() {
             </Title>
             <Category filterItems={filterItems} category={category} theme={theme} setTheme={setTheme} ></Category>
                 <Menu items={menuItems}></Menu>
-                <Footer id="Footer"></Footer>
+                <Footer ></Footer>
           </Section>
         </Application>
     </ThemeProvider>

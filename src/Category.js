@@ -4,6 +4,7 @@ import { HiMoon } from "react-icons/hi";
 import { CgSun } from "react-icons/cg";
 
 const Category = ({ filterItems, category, theme, setTheme }) => {
+
     
     const changeTheme = () => {
         if (theme === "light") {

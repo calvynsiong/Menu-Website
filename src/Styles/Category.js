@@ -6,6 +6,10 @@ export const Buttondiv = styled.div`
     flex-flow: row wrap;
 	justify-content: center;
 
+	@media (max-width: 400px){
+		flex-direction: column;
+	}
+
 	button {
 		background: transparent;
 		border: transparent;
